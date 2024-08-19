@@ -168,32 +168,39 @@ function bomber:get_target()
 end
 
 local pylons = {
-    "MeteoricHellborne",       -- Hellfire now spawns Hellborne, +1 Aether
     "SkulkingHellborne",       -- Hellborne Hunting You, Hellborne +1 Aether
     "SurgingHellborne",        -- +1 Hellborne when Spawned, Hellborne Grant +1 Aether
+    "MeteoricHellborne",       -- Hellfire spawns Hellborne
+
     "EmpoweredHellborne",      -- Hellborne +25% Damage, Hellborne grant +1 Aether
     "BlisteringHordes",        -- Normal Monster Spawn Aether Events 50% Faster
-    "InfernalLords",           -- Aether Lords Now Spawn, they grant +3 Aether
-    "SurgingElites",           -- Chance for Elite Doubled, Aether Fiends grant +1 Aether
+
     "RagingHellfire",          -- Hellfire rains upon you, at the end of each wave spawn 1-3 Aether
-    "InfernalStalker",         -- An Infernal demon has your scent, Slay it to gain +25 Aether
-    "ThrivingMasses",          -- Masses deal unavoidable damage, Wave start, spawn an Aetheric Mass
-    "GestatingMasses",         -- Masses spawn an Aether lord on Death, Aether Lords Grant +3 Aether
-    "EmpoweredMasses",         -- Aetheric Mass damage: +25%, Aetheric Mass grants +1 Aether
+    "InvigoratingHellborne",   -- Hellborne Damage +25%, Slaying Hellborne Invigorates you
+    "SurgingElites",           -- Chance for Elite Doubled, Aether Fiends grant +1 Aether
+
+    "UnstoppableElites",       -- Elites are Unstoppable, Aether Fiends grant +1 Aether
     "EmpoweredElites",         -- Elite damage +25%, Aether Fiends grant +1 Aether
+    "EmpoweredMasses",         -- Aetheric Mass damage: +25%, Aetheric Mass grants +1 Aether
+    "DeadlySpires",            -- Soulspires Drain Health, Soulspires grant +1 Aether
+    "GreedySpires",            -- Soulspire requires 2x kills, Soulspires grant 2x Aether
+
     "IncreasedEvadeCooldown",  -- Increase Evade Cooldown +2 Sec, Council grants +15 Aether
     "IncreasedPotionCooldown", -- Increase potion cooldown +2 Sec, Council Grants +15 Aether
     "EmpoweredCouncil",        -- Fell Council +50% Damage, Council grants +15 Aether
     "ReduceAllResistance",     -- Reduce All Resist -10%, Council grants +15 Aether
-    "DeadlySpires",            -- Soulspires Drain Health, Soulspires grant +2 Aether
-    "UnstoppableElites",       -- Elites are Unstoppable, Aether Fiends grant +1 Aether
-    "InvigoratingHellborne",   -- Hellborne Damage +25%, Slaying Hellborne Invigorates you
-    "CorruptingSpires",        -- Soulspires empower nearby foes, they also pull enemies inward
-    "UnstableFiends",          -- Elite Damage +25%, Aether Fiends explode and damage FOES
+
+    "ThrivingMasses",          -- Masses deal unavoidable damage, Wave start, spawn an Aetheric Mass
     "AetherRush",              -- Normal Monsters Damage +25%, Gathering Aether Increases Movement Speed
+    "CorruptingSpires",        -- Soulspires empower nearby foes, they also pull enemies inward
+    "UnstableFiends",          -- Elite Damage +25%, Aether Fiends explode and damage FOE
+
     "EnergizingMasses",        -- Slaying Aetheric Masses slow you, While slowed this way, you have UNLIMITED RESOURCES
-    "GreedySpires",            -- Soulspire requires 2x kills, Soulspires grant 2x Aether
+    "InfernalLords",           -- Aether Lords Now Spawn, they grant +3 Aether
+    "GestatingMasses",         -- Masses spawn an Aether lord on Death, Aether Lords Grant +3 Aether
+    "InfernalStalker",         -- An Infernal demon has your scent, Slay it to gain +25 Aether
 }
+
 
 function bomber:get_pylons()
     local actors = actors_manager:get_all_actors()
